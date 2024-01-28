@@ -1,6 +1,237 @@
-h2{
- text-align: center;
+/*@import url('https://fonts.gooleapis.com/css2?family=poppins');*/
+*{
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
 }
-.btn btn-dark{
-    padding:5px;
+a{
+    text-decoration: none;
+    color: black;
+}
+/*navbar*/
+.navbar{
+    background-color: #98ea2d53;
+    display: flex;
+    position:absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    justify-content: space-between;
+    padding: 0px;
+    color:rgb(233, 175, 183);
+    
+}
+ul{
+    list-style: none;
+    color: #2f2525;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+
+}
+.nav-links li{
+    margin: 0 20px;
+
+}
+.search-container {
+    display: flex;
+    align-items:center;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(232, 193, 193, 0.488);
+    background-position:top;
+    background: size 200px;;
+    display:flex;
+    align-items:flex-end;
+    justify-content: right;
+}
+.header-content{
+    margin-bottom:20px;
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+color: #0e0d0d;
+text-align:center;
+text-decoration: none;
+font-size: 4vmin;
+
+}
+.header-content h3{
+    margin-top: 10px;
+}
+.header-content p{
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.carousel-container {
+    width: 70%;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    width: 100%;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #333;
+    background-color: #ddd;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.slide-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide-card {
+    width: 100%;
+    min-width: 300px;
+    height: 400px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    position:relative;
+    transition: transform 0.3s;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.3s;
+}
+
+.slide-card input {
+    display: none;
+}
+
+.slider input:checked + .slide-card {
+    transform: translateX(0);
+}
+
+.slide-card:not(:checked) {
+    transform: translateX(100%);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    padding: 15px;
+}
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color:darkblue;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width:100%;
+    justify-content: space-between;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row .col img{
+    width:80%;
+}
+.events .row{
+    margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+p{
+    color:#382222;
+    padding: 0px 40px;
+}
+body{
+    overflow-x: hidden;
+}
+.explore{
+    width:80%;
+    height:80%;
+    background-image: url('img/ezra-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.explore-content{
+    width:50%;
+    padding:50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.explore-content h1{
+    font-size: 7vmin;
+    margin: 50px;
+}
+.explore-content p{
+    color: #201e1e;
+}
+.explore-content .ctn{
+    margin-top: 40px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position:relative;
+    bottom: 0;
+    width: 100%;
 }
